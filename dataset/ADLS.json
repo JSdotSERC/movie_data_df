@@ -1,0 +1,25 @@
+{
+	"name": "ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ActionCSV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "action.csv",
+				"folderPath": "raw data",
+				"fileSystem": "moviesdataproject"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
